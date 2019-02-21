@@ -1,0 +1,118 @@
+#random{
+  /* BOX MODEL */
+  width: 50%;
+  height: 80%;
+  border: 1px solid black;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* ENHANCEMENT */
+  background-image: url('http://placehold.it/300&text=banner1');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.url {cursor: url(myBall.cur),auto;}
+
+body
+{
+	padding: 50px;
+}
+
+.animate
+{
+	transition: all 0.1s;
+	-webkit-transition: all 0.1s;
+}
+
+.action-button
+{
+  display: flex;
+  justify-content: center;
+	position: relative;
+	padding: 10px 40px;
+  margin: 0px 10px 10px 0px;
+  float: left;
+	border-radius: 10px;
+	font-family: 'Pacifico', cursive;
+	font-size: 25px;
+	color: #FFF;
+	text-decoration: none;
+}
+
+.blue
+{
+
+	background-color: #3498DB;
+	border-bottom: 5px solid #2980B9;
+	text-shadow: 0px -2px #2980B9;
+}
+
+
+
+.action-button:active
+{
+	transform: translate(0px,5px);
+  -webkit-transform: translate(0px,5px);
+	border-bottom: 1px solid;
+}
+/* ---- reset ---- */
+
+body {
+  margin: 0;
+  font:normal 75% Arial, Helvetica, sans-serif;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #b61924;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+/* ---- stats.js ---- */
+
+.count-particles{
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13E8E9;
+  font-size: .8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.js-count-particles{
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles{
+  -webkit-user-select: none;
+}
+
+#stats{
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles{
+  border-radius: 0 0 3px 3px;
+}
